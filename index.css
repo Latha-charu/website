@@ -1,0 +1,99 @@
+:root {
+    --white: #fff;
+    --black: #222;
+    --pink: #f60091;
+    --grey: #444;
+    --grey2: #959595;
+    --grey-alt: #d1e2e9;
+    --yellow: #ffd800;
+    --green: #59b210;
+  }
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  body {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--black);
+    background-color: var(--white);
+    z-index: -1;
+    /* overflow: hidden; */
+  }
+  .advert{
+      background-color: var(--pink);
+      text-align: center;
+      color: var(--white);
+  }
+  /* Header */
+  .logo-header{
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--yellow);
+      padding: 1.5rem;
+      height: 7rem;
+  }
+  .bars{
+      margin-right: 2rem;
+      font-size: 2rem;
+  }
+
+  h1 span{
+      color: var(--pink);
+  }
+  .nav-list{
+      list-style-type: none;
+  }
+  .nav-item a{
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+  }
+  .main-header .nav-item{
+    display: inline-block;
+    margin: 1rem;
+  }
+  .main-header{
+      visibility: hidden;
+  }
+  .smallscreen1{
+      background-color: rgba(0,0,0,0.7);
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      color: white;
+      display: none;
+  }
+  .smallscreen{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 250px;
+      z-index: 2;
+      background-color: var(--white);
+  }
+  .heading{
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      background-color: var(--pink);
+  }
+  .close{
+      margin-right: 2rem;
+      font-size: 2rem;
+  }
+  .smallScreen-menu .nav-item{
+      margin: 3rem;
+  }
